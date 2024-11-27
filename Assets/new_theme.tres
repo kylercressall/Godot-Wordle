@@ -1,0 +1,42 @@
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://cvslrcqiixnqy"]
+
+[ext_resource type="FontFile" uid="uid://b8urlhle2qlas" path="res://Assets/Ubuntu_Mono/UbuntuMono-Regular.ttf" id="1_8172i"]
+
+[sub_resource type="FontVariation" id="FontVariation_tu57s"]
+base_font = ExtResource("1_8172i")
+spacing_glyph = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t0k1g"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nbf8u"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="FontVariation" id="FontVariation_130is"]
+base_font = ExtResource("1_8172i")
+spacing_glyph = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3ysk5"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[resource]
+default_font = SubResource("FontVariation_tu57s")
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/font_sizes/font_size = 100
+LineEdit/colors/caret_color = Color(0.94902, 0.94902, 0.94902, 0)
+LineEdit/colors/clear_button_color = Color(0.87451, 0.87451, 0.87451, 0)
+LineEdit/colors/clear_button_color_pressed = Color(1, 1, 1, 0)
+LineEdit/colors/font_color = Color(0, 0, 0, 1)
+LineEdit/colors/font_placeholder_color = Color(0.87451, 0.87451, 0.87451, 0)
+LineEdit/colors/font_selected_color = Color(1, 1, 1, 0)
+LineEdit/colors/font_uneditable_color = Color(0, 0, 0, 1)
+LineEdit/colors/selection_color = Color(0, 0, 0, 0)
+LineEdit/font_sizes/font_size = 100
+LineEdit/fonts/font = SubResource("FontVariation_tu57s")
+LineEdit/styles/normal = SubResource("StyleBoxFlat_t0k1g")
+LineEdit/styles/read_only = SubResource("StyleBoxFlat_nbf8u")
+RichTextLabel/font_sizes/mono_font_size = 36
+TextEdit/colors/font_color = Color(0, 0, 0, 1)
+TextEdit/font_sizes/font_size = 100
+TextEdit/fonts/font = SubResource("FontVariation_130is")
+TextEdit/styles/normal = SubResource("StyleBoxFlat_3ysk5")

@@ -1,0 +1,1037 @@
+[gd_scene load_steps=7 format=3 uid="uid://crmo8any0lb6y"]
+
+[ext_resource type="Script" path="res://Scripts/game_logic_choose.gd" id="1_p6a04"]
+[ext_resource type="Texture2D" uid="uid://cmyhee5mtf4qx" path="res://Assets/boxes/graybox.png" id="2_wrlme"]
+[ext_resource type="LabelSettings" uid="uid://c51itc4s6a3tx" path="res://Assets/new_label_settings.tres" id="3_dqdpb"]
+[ext_resource type="Theme" uid="uid://iacnw8kjok03" path="res://Assets/proper_theme.tres" id="4_svfsc"]
+[ext_resource type="Script" path="res://Scripts/restart_random_button.gd" id="5_m3123"]
+[ext_resource type="Script" path="res://Scripts/title_screen_button.gd" id="6_jes6x"]
+
+[node name="RandomGame" type="Node2D"]
+script = ExtResource("1_p6a04")
+
+[node name="word1" type="Node2D" parent="."]
+position = Vector2(-300, 72)
+
+[node name="letter1" type="Sprite2D" parent="word1"]
+position = Vector2(670, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label" type="Label" parent="word1"]
+offset_left = 622.0
+offset_top = 57.0
+offset_right = 717.0
+offset_bottom = 194.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter2" type="Sprite2D" parent="word1"]
+position = Vector2(782, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label2" type="Label" parent="word1"]
+offset_left = 736.0
+offset_top = 58.0
+offset_right = 828.0
+offset_bottom = 195.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter3" type="Sprite2D" parent="word1"]
+position = Vector2(895, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label3" type="Label" parent="word1"]
+offset_left = 847.0
+offset_top = 57.0
+offset_right = 942.0
+offset_bottom = 194.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter4" type="Sprite2D" parent="word1"]
+position = Vector2(1008.86, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label4" type="Label" parent="word1"]
+offset_left = 960.858
+offset_top = 57.0
+offset_right = 1055.86
+offset_bottom = 194.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter5" type="Sprite2D" parent="word1"]
+position = Vector2(1121.86, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label5" type="Label" parent="word1"]
+offset_left = 1073.86
+offset_top = 57.0
+offset_right = 1168.86
+offset_bottom = 194.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="word2" type="Node2D" parent="."]
+position = Vector2(-300, 200)
+
+[node name="letter1" type="Sprite2D" parent="word2"]
+position = Vector2(670, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label" type="Label" parent="word2"]
+offset_left = 622.0
+offset_top = 57.0
+offset_right = 717.0
+offset_bottom = 194.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter2" type="Sprite2D" parent="word2"]
+position = Vector2(782, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label2" type="Label" parent="word2"]
+offset_left = 736.0
+offset_top = 58.0
+offset_right = 828.0
+offset_bottom = 195.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter3" type="Sprite2D" parent="word2"]
+position = Vector2(895, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label3" type="Label" parent="word2"]
+offset_left = 847.0
+offset_top = 57.0
+offset_right = 942.0
+offset_bottom = 194.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter4" type="Sprite2D" parent="word2"]
+position = Vector2(1008.86, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label4" type="Label" parent="word2"]
+offset_left = 960.858
+offset_top = 57.0
+offset_right = 1055.86
+offset_bottom = 194.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter5" type="Sprite2D" parent="word2"]
+position = Vector2(1121.86, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label5" type="Label" parent="word2"]
+offset_left = 1073.86
+offset_top = 57.0
+offset_right = 1168.86
+offset_bottom = 194.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="word3" type="Node2D" parent="."]
+position = Vector2(-300, 330)
+
+[node name="letter1" type="Sprite2D" parent="word3"]
+position = Vector2(670, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label" type="Label" parent="word3"]
+offset_left = 622.0
+offset_top = 57.0
+offset_right = 717.0
+offset_bottom = 194.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter2" type="Sprite2D" parent="word3"]
+position = Vector2(782, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label2" type="Label" parent="word3"]
+offset_left = 736.0
+offset_top = 58.0
+offset_right = 828.0
+offset_bottom = 195.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter3" type="Sprite2D" parent="word3"]
+position = Vector2(895, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label3" type="Label" parent="word3"]
+offset_left = 847.0
+offset_top = 57.0
+offset_right = 942.0
+offset_bottom = 194.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter4" type="Sprite2D" parent="word3"]
+position = Vector2(1008.86, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label4" type="Label" parent="word3"]
+offset_left = 960.858
+offset_top = 57.0
+offset_right = 1055.86
+offset_bottom = 194.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter5" type="Sprite2D" parent="word3"]
+position = Vector2(1121.86, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label5" type="Label" parent="word3"]
+offset_left = 1073.86
+offset_top = 57.0
+offset_right = 1168.86
+offset_bottom = 194.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="word4" type="Node2D" parent="."]
+position = Vector2(-300, 460)
+
+[node name="letter1" type="Sprite2D" parent="word4"]
+position = Vector2(670, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label" type="Label" parent="word4"]
+offset_left = 622.0
+offset_top = 57.0
+offset_right = 717.0
+offset_bottom = 194.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter2" type="Sprite2D" parent="word4"]
+position = Vector2(782, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label2" type="Label" parent="word4"]
+offset_left = 736.0
+offset_top = 58.0
+offset_right = 828.0
+offset_bottom = 195.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter3" type="Sprite2D" parent="word4"]
+position = Vector2(895, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label3" type="Label" parent="word4"]
+offset_left = 847.0
+offset_top = 57.0
+offset_right = 942.0
+offset_bottom = 194.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter4" type="Sprite2D" parent="word4"]
+position = Vector2(1008.86, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label4" type="Label" parent="word4"]
+offset_left = 960.858
+offset_top = 57.0
+offset_right = 1055.86
+offset_bottom = 194.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter5" type="Sprite2D" parent="word4"]
+position = Vector2(1121.86, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label5" type="Label" parent="word4"]
+offset_left = 1073.86
+offset_top = 57.0
+offset_right = 1168.86
+offset_bottom = 194.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="word5" type="Node2D" parent="."]
+position = Vector2(-300, 590)
+
+[node name="letter1" type="Sprite2D" parent="word5"]
+position = Vector2(670, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label" type="Label" parent="word5"]
+offset_left = 622.0
+offset_top = 57.0
+offset_right = 717.0
+offset_bottom = 194.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter2" type="Sprite2D" parent="word5"]
+position = Vector2(782, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label2" type="Label" parent="word5"]
+offset_left = 736.0
+offset_top = 58.0
+offset_right = 828.0
+offset_bottom = 195.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter3" type="Sprite2D" parent="word5"]
+position = Vector2(895, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label3" type="Label" parent="word5"]
+offset_left = 847.0
+offset_top = 57.0
+offset_right = 942.0
+offset_bottom = 194.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter4" type="Sprite2D" parent="word5"]
+position = Vector2(1008.86, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label4" type="Label" parent="word5"]
+offset_left = 960.858
+offset_top = 57.0
+offset_right = 1055.86
+offset_bottom = 194.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter5" type="Sprite2D" parent="word5"]
+position = Vector2(1121.86, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label5" type="Label" parent="word5"]
+offset_left = 1073.86
+offset_top = 57.0
+offset_right = 1168.86
+offset_bottom = 194.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="word6" type="Node2D" parent="."]
+position = Vector2(-300, 720)
+
+[node name="letter1" type="Sprite2D" parent="word6"]
+position = Vector2(670, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label" type="Label" parent="word6"]
+offset_left = 622.0
+offset_top = 57.0
+offset_right = 717.0
+offset_bottom = 194.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter2" type="Sprite2D" parent="word6"]
+position = Vector2(782, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label2" type="Label" parent="word6"]
+offset_left = 736.0
+offset_top = 58.0
+offset_right = 828.0
+offset_bottom = 195.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter3" type="Sprite2D" parent="word6"]
+position = Vector2(895, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label3" type="Label" parent="word6"]
+offset_left = 847.0
+offset_top = 57.0
+offset_right = 942.0
+offset_bottom = 194.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter4" type="Sprite2D" parent="word6"]
+position = Vector2(1008.86, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label4" type="Label" parent="word6"]
+offset_left = 960.858
+offset_top = 57.0
+offset_right = 1055.86
+offset_bottom = 194.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter5" type="Sprite2D" parent="word6"]
+position = Vector2(1121.86, 125)
+scale = Vector2(1.437, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label5" type="Label" parent="word6"]
+offset_left = 1073.86
+offset_top = 57.0
+offset_right = 1168.86
+offset_bottom = 194.0
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="keyboard" type="Node2D" parent="."]
+position = Vector2(0, 238)
+
+[node name="letter1" type="Sprite2D" parent="keyboard"]
+position = Vector2(1050, 205)
+scale = Vector2(0.917, 0.696843)
+texture = ExtResource("2_wrlme")
+
+[node name="label1" type="Label" parent="keyboard"]
+offset_left = 1022.0
+offset_top = 161.0
+offset_right = 1117.0
+offset_bottom = 298.0
+scale = Vector2(0.585465, 0.585465)
+theme_override_font_sizes/font_size = 20
+text = "Q"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter2" type="Sprite2D" parent="keyboard"]
+position = Vector2(1130, 205)
+scale = Vector2(0.917, 0.696843)
+texture = ExtResource("2_wrlme")
+
+[node name="label2" type="Label" parent="keyboard"]
+offset_left = 1102.0
+offset_top = 165.0
+offset_right = 1197.0
+offset_bottom = 302.0
+scale = Vector2(0.585465, 0.585465)
+theme_override_font_sizes/font_size = 20
+text = "w"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter4" type="Sprite2D" parent="keyboard"]
+position = Vector2(1210, 205)
+scale = Vector2(0.917, 0.696843)
+texture = ExtResource("2_wrlme")
+
+[node name="label4" type="Label" parent="keyboard"]
+offset_left = 1182.0
+offset_top = 165.0
+offset_right = 1277.0
+offset_bottom = 302.0
+scale = Vector2(0.585465, 0.585465)
+theme_override_font_sizes/font_size = 20
+text = "e"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter5" type="Sprite2D" parent="keyboard"]
+position = Vector2(1290, 205)
+scale = Vector2(0.917, 0.696843)
+texture = ExtResource("2_wrlme")
+
+[node name="label5" type="Label" parent="keyboard"]
+offset_left = 1262.0
+offset_top = 165.0
+offset_right = 1357.0
+offset_bottom = 302.0
+scale = Vector2(0.585465, 0.585465)
+theme_override_font_sizes/font_size = 20
+text = "r"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter6" type="Sprite2D" parent="keyboard"]
+position = Vector2(1370, 205)
+scale = Vector2(0.917, 0.696843)
+texture = ExtResource("2_wrlme")
+
+[node name="label6" type="Label" parent="keyboard"]
+offset_left = 1342.0
+offset_top = 165.0
+offset_right = 1437.0
+offset_bottom = 302.0
+scale = Vector2(0.585465, 0.585465)
+theme_override_font_sizes/font_size = 20
+text = "t"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter7" type="Sprite2D" parent="keyboard"]
+position = Vector2(1450, 205)
+scale = Vector2(0.917, 0.696843)
+texture = ExtResource("2_wrlme")
+
+[node name="label7" type="Label" parent="keyboard"]
+offset_left = 1422.0
+offset_top = 165.0
+offset_right = 1517.0
+offset_bottom = 302.0
+scale = Vector2(0.585465, 0.585465)
+theme_override_font_sizes/font_size = 20
+text = "y"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter8" type="Sprite2D" parent="keyboard"]
+position = Vector2(1530, 205)
+scale = Vector2(0.917, 0.696843)
+texture = ExtResource("2_wrlme")
+
+[node name="label8" type="Label" parent="keyboard"]
+offset_left = 1503.0
+offset_top = 165.0
+offset_right = 1598.0
+offset_bottom = 302.0
+scale = Vector2(0.585465, 0.585465)
+theme_override_font_sizes/font_size = 20
+text = "u"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter9" type="Sprite2D" parent="keyboard"]
+position = Vector2(1610, 205)
+scale = Vector2(0.917, 0.696843)
+texture = ExtResource("2_wrlme")
+
+[node name="label9" type="Label" parent="keyboard"]
+offset_left = 1582.0
+offset_top = 167.0
+offset_right = 1677.0
+offset_bottom = 304.0
+scale = Vector2(0.585465, 0.585465)
+theme_override_font_sizes/font_size = 20
+text = "i"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter10" type="Sprite2D" parent="keyboard"]
+position = Vector2(1690, 205)
+scale = Vector2(0.917, 0.696843)
+texture = ExtResource("2_wrlme")
+
+[node name="label10" type="Label" parent="keyboard"]
+offset_left = 1662.0
+offset_top = 165.0
+offset_right = 1757.0
+offset_bottom = 302.0
+scale = Vector2(0.585465, 0.585465)
+theme_override_font_sizes/font_size = 20
+text = "o"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter11" type="Sprite2D" parent="keyboard"]
+position = Vector2(1770, 205)
+scale = Vector2(0.917, 0.696843)
+texture = ExtResource("2_wrlme")
+
+[node name="label11" type="Label" parent="keyboard"]
+offset_left = 1742.0
+offset_top = 165.0
+offset_right = 1837.0
+offset_bottom = 302.0
+scale = Vector2(0.585465, 0.585465)
+theme_override_font_sizes/font_size = 20
+text = "p"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter12" type="Sprite2D" parent="keyboard"]
+position = Vector2(1090, 295)
+scale = Vector2(0.917, 0.696843)
+texture = ExtResource("2_wrlme")
+
+[node name="label12" type="Label" parent="keyboard"]
+offset_left = 1062.0
+offset_top = 255.0
+offset_right = 1157.0
+offset_bottom = 392.0
+scale = Vector2(0.585465, 0.585465)
+theme_override_font_sizes/font_size = 20
+text = "a"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter13" type="Sprite2D" parent="keyboard"]
+position = Vector2(1170, 295)
+scale = Vector2(0.917, 0.696843)
+texture = ExtResource("2_wrlme")
+
+[node name="label13" type="Label" parent="keyboard"]
+offset_left = 1142.0
+offset_top = 255.0
+offset_right = 1237.0
+offset_bottom = 392.0
+scale = Vector2(0.585465, 0.585465)
+theme_override_font_sizes/font_size = 20
+text = "s"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter14" type="Sprite2D" parent="keyboard"]
+position = Vector2(1250, 295)
+scale = Vector2(0.917, 0.696843)
+texture = ExtResource("2_wrlme")
+
+[node name="label14" type="Label" parent="keyboard"]
+offset_left = 1223.0
+offset_top = 255.0
+offset_right = 1318.0
+offset_bottom = 392.0
+scale = Vector2(0.585465, 0.585465)
+theme_override_font_sizes/font_size = 20
+text = "d"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter15" type="Sprite2D" parent="keyboard"]
+position = Vector2(1330, 295)
+scale = Vector2(0.917, 0.696843)
+texture = ExtResource("2_wrlme")
+
+[node name="label15" type="Label" parent="keyboard"]
+offset_left = 1302.0
+offset_top = 256.0
+offset_right = 1397.0
+offset_bottom = 393.0
+scale = Vector2(0.585465, 0.585465)
+theme_override_font_sizes/font_size = 20
+text = "f"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter16" type="Sprite2D" parent="keyboard"]
+position = Vector2(1410, 295)
+scale = Vector2(0.917, 0.696843)
+texture = ExtResource("2_wrlme")
+
+[node name="label16" type="Label" parent="keyboard"]
+offset_left = 1382.0
+offset_top = 255.0
+offset_right = 1477.0
+offset_bottom = 392.0
+scale = Vector2(0.585465, 0.585465)
+theme_override_font_sizes/font_size = 20
+text = "g"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter18" type="Sprite2D" parent="keyboard"]
+position = Vector2(1490, 295)
+scale = Vector2(0.917, 0.696843)
+texture = ExtResource("2_wrlme")
+
+[node name="label18" type="Label" parent="keyboard"]
+offset_left = 1462.0
+offset_top = 255.0
+offset_right = 1557.0
+offset_bottom = 392.0
+scale = Vector2(0.585465, 0.585465)
+theme_override_font_sizes/font_size = 20
+text = "h"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter19" type="Sprite2D" parent="keyboard"]
+position = Vector2(1570, 295)
+scale = Vector2(0.917, 0.696843)
+texture = ExtResource("2_wrlme")
+
+[node name="label19" type="Label" parent="keyboard"]
+offset_left = 1544.0
+offset_top = 260.0
+offset_right = 1639.0
+offset_bottom = 397.0
+scale = Vector2(0.591429, 0.497999)
+theme_override_font_sizes/font_size = 20
+text = "j"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter20" type="Sprite2D" parent="keyboard"]
+position = Vector2(1650, 295)
+scale = Vector2(0.917, 0.696843)
+texture = ExtResource("2_wrlme")
+
+[node name="label20" type="Label" parent="keyboard"]
+offset_left = 1622.0
+offset_top = 256.0
+offset_right = 1717.0
+offset_bottom = 393.0
+scale = Vector2(0.585465, 0.585465)
+theme_override_font_sizes/font_size = 20
+text = "k"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter21" type="Sprite2D" parent="keyboard"]
+position = Vector2(1730, 295)
+scale = Vector2(0.917, 0.696843)
+texture = ExtResource("2_wrlme")
+
+[node name="label21" type="Label" parent="keyboard"]
+offset_left = 1703.0
+offset_top = 256.0
+offset_right = 1798.0
+offset_bottom = 393.0
+scale = Vector2(0.585465, 0.585465)
+theme_override_font_sizes/font_size = 20
+text = "l"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter22" type="Sprite2D" parent="keyboard"]
+position = Vector2(1130, 385)
+scale = Vector2(0.917, 0.696843)
+texture = ExtResource("2_wrlme")
+
+[node name="label22" type="Label" parent="keyboard"]
+offset_left = 1102.0
+offset_top = 344.0
+offset_right = 1197.0
+offset_bottom = 481.0
+scale = Vector2(0.585465, 0.585465)
+theme_override_font_sizes/font_size = 20
+text = "z"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter23" type="Sprite2D" parent="keyboard"]
+position = Vector2(1210, 385)
+scale = Vector2(0.917, 0.696843)
+texture = ExtResource("2_wrlme")
+
+[node name="label23" type="Label" parent="keyboard"]
+offset_left = 1182.0
+offset_top = 346.0
+offset_right = 1277.0
+offset_bottom = 483.0
+scale = Vector2(0.585465, 0.585465)
+theme_override_font_sizes/font_size = 20
+text = "x"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter24" type="Sprite2D" parent="keyboard"]
+position = Vector2(1290, 385)
+scale = Vector2(0.917, 0.696843)
+texture = ExtResource("2_wrlme")
+
+[node name="label24" type="Label" parent="keyboard"]
+offset_left = 1261.0
+offset_top = 345.0
+offset_right = 1356.0
+offset_bottom = 482.0
+scale = Vector2(0.585465, 0.585465)
+theme_override_font_sizes/font_size = 20
+text = "c"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter25" type="Sprite2D" parent="keyboard"]
+position = Vector2(1370, 385)
+scale = Vector2(0.917, 0.696843)
+texture = ExtResource("2_wrlme")
+
+[node name="label25" type="Label" parent="keyboard"]
+offset_left = 1342.0
+offset_top = 345.0
+offset_right = 1437.0
+offset_bottom = 482.0
+scale = Vector2(0.585465, 0.585465)
+theme_override_font_sizes/font_size = 20
+text = "v"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter26" type="Sprite2D" parent="keyboard"]
+position = Vector2(1450, 385)
+scale = Vector2(0.917, 0.696843)
+texture = ExtResource("2_wrlme")
+
+[node name="label26" type="Label" parent="keyboard"]
+offset_left = 1422.0
+offset_top = 346.0
+offset_right = 1517.0
+offset_bottom = 483.0
+scale = Vector2(0.585465, 0.585465)
+theme_override_font_sizes/font_size = 20
+text = "b"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter27" type="Sprite2D" parent="keyboard"]
+position = Vector2(1530, 385)
+scale = Vector2(0.917, 0.696843)
+texture = ExtResource("2_wrlme")
+
+[node name="label27" type="Label" parent="keyboard"]
+offset_left = 1502.0
+offset_top = 347.0
+offset_right = 1597.0
+offset_bottom = 484.0
+scale = Vector2(0.585465, 0.585465)
+theme_override_font_sizes/font_size = 20
+text = "n"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter28" type="Sprite2D" parent="keyboard"]
+position = Vector2(1610, 385)
+scale = Vector2(0.917, 0.696843)
+texture = ExtResource("2_wrlme")
+
+[node name="label28" type="Label" parent="keyboard"]
+offset_left = 1583.0
+offset_top = 347.0
+offset_right = 1678.0
+offset_bottom = 484.0
+scale = Vector2(0.585465, 0.585465)
+theme_override_font_sizes/font_size = 20
+text = "m"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="Restart" type="Button" parent="."]
+offset_left = 1040.0
+offset_top = 800.0
+offset_right = 1334.0
+offset_bottom = 829.0
+theme = ExtResource("4_svfsc")
+text = "Restart - New Word"
+script = ExtResource("5_m3123")
+
+[node name="Title_Screen" type="Button" parent="."]
+offset_left = 1484.0
+offset_top = 800.0
+offset_right = 1778.0
+offset_bottom = 829.0
+theme = ExtResource("4_svfsc")
+text = "Back to Title Screen
+"
+script = ExtResource("6_jes6x")
+
+[node name="not" type="Node2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(70, -58)
+
+[node name="Sprite2D" type="Sprite2D" parent="not"]
+position = Vector2(1338.25, 377.75)
+scale = Vector2(4.52206, 0.515306)
+texture = ExtResource("2_wrlme")
+
+[node name="Not in word list" type="Label" parent="not"]
+offset_left = 1190.0
+offset_top = 350.0
+offset_right = 1486.0
+offset_bottom = 405.0
+theme = ExtResource("4_svfsc")
+text = "Not in word list"
+
+[node name="win" type="Node2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(-937, -396)
+scale = Vector2(1.75543, 1.75543)
+
+[node name="Sprite2D" type="Sprite2D" parent="win"]
+position = Vector2(1338.25, 377.75)
+scale = Vector2(4.52206, 0.515306)
+texture = ExtResource("2_wrlme")
+
+[node name="win" type="Label" parent="win"]
+offset_left = 1190.0
+offset_top = 350.0
+offset_right = 1486.0
+offset_bottom = 405.0
+theme = ExtResource("4_svfsc")
+text = "You win!"
+horizontal_alignment = 1
+
+[node name="lose" type="Node2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(-937, -396)
+scale = Vector2(1.75543, 1.75543)
+
+[node name="Sprite2D" type="Sprite2D" parent="lose"]
+position = Vector2(1338.25, 377.75)
+scale = Vector2(4.52206, 0.515306)
+texture = ExtResource("2_wrlme")
+
+[node name="incorrect" type="Label" parent="lose"]
+offset_left = 1190.0
+offset_top = 350.0
+offset_right = 1486.0
+offset_bottom = 405.0
+theme = ExtResource("4_svfsc")
+text = "incorrect word!"
+horizontal_alignment = 1
+
+[node name="chooseword" type="LineEdit" parent="."]
+offset_left = 1204.0
+offset_top = 921.0
+offset_right = 1536.0
+offset_bottom = 975.0
+theme = ExtResource("4_svfsc")
+placeholder_text = "Enter 5 letter word:"
+max_length = 5
+
+[connection signal="pressed" from="Restart" to="Restart" method="_on_pressed"]
+[connection signal="pressed" from="Title_Screen" to="Title_Screen" method="_on_pressed"]
+[connection signal="text_submitted" from="chooseword" to="." method="_on_chooseword_text_submitted"]

@@ -1,0 +1,91 @@
+[gd_scene load_steps=4 format=3 uid="uid://b4njyl50s0qbc"]
+
+[ext_resource type="Script" path="res://Scripts/game_logic.gd" id="1_lq1ml"]
+[ext_resource type="Texture2D" uid="uid://cmyhee5mtf4qx" path="res://Assets/boxes/graybox.png" id="2_wrlme"]
+[ext_resource type="LabelSettings" uid="uid://c51itc4s6a3tx" path="res://Assets/new_label_settings.tres" id="3_dqdpb"]
+
+[node name="ChooseGame" type="Node2D"]
+script = ExtResource("1_lq1ml")
+
+[node name="word1" type="Node2D" parent="."]
+position = Vector2(0, -3)
+
+[node name="letter1" type="Sprite2D" parent="word1"]
+position = Vector2(717.191, 124.968)
+scale = Vector2(1.18209, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label" type="Label" parent="word1"]
+offset_left = 677.0
+offset_top = 57.0
+offset_right = 756.0
+offset_bottom = 194.0
+text = "a"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter2" type="Sprite2D" parent="word1"]
+position = Vector2(811.191, 124.968)
+scale = Vector2(1.18209, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label2" type="Label" parent="word1"]
+offset_left = 771.0
+offset_top = 57.0
+offset_right = 850.0
+offset_bottom = 194.0
+text = "a"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter3" type="Sprite2D" parent="word1"]
+position = Vector2(908.191, 124.968)
+scale = Vector2(1.18209, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label3" type="Label" parent="word1"]
+offset_left = 868.0
+offset_top = 57.0
+offset_right = 947.0
+offset_bottom = 194.0
+text = "a"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter4" type="Sprite2D" parent="word1"]
+position = Vector2(1002.19, 124.968)
+scale = Vector2(1.18209, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label4" type="Label" parent="word1"]
+offset_left = 962.0
+offset_top = 57.0
+offset_right = 1041.0
+offset_bottom = 194.0
+text = "a"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="letter5" type="Sprite2D" parent="word1"]
+position = Vector2(1098.19, 124.968)
+scale = Vector2(1.18209, 1.092)
+texture = ExtResource("2_wrlme")
+
+[node name="Label5" type="Label" parent="word1"]
+offset_left = 1058.0
+offset_top = 57.0
+offset_right = 1137.0
+offset_bottom = 194.0
+text = "a"
+label_settings = ExtResource("3_dqdpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true

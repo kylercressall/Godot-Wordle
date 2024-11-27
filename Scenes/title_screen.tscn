@@ -1,0 +1,74 @@
+[gd_scene load_steps=9 format=3 uid="uid://crtd4m042crjc"]
+
+[ext_resource type="Script" path="res://Scripts/random_button.gd" id="1_5a7t1"]
+[ext_resource type="Texture2D" uid="uid://befay7uvsywv7" path="res://icon.svg" id="1_bjapb"]
+[ext_resource type="Script" path="res://Scripts/choose_button.gd" id="2_8qpbo"]
+[ext_resource type="Theme" uid="uid://iacnw8kjok03" path="res://Assets/proper_theme.tres" id="2_kkqjs"]
+[ext_resource type="FontFile" uid="uid://ddhj217di5esl" path="res://Assets/Ubuntu_Mono/UbuntuMono-Bold.ttf" id="4_ldc2o"]
+[ext_resource type="Script" path="res://Scripts/3 - Daily/restart_daily_button.gd" id="5_dqtah"]
+
+[sub_resource type="Theme" id="Theme_0kmsp"]
+Label/colors/font_color = Color(0.764706, 0.764706, 0.764706, 1)
+Label/font_sizes/font_size = 100
+
+[sub_resource type="Theme" id="Theme_ji2qj"]
+Label/colors/font_color = Color(0.764706, 0.764706, 0.764706, 1)
+Label/font_sizes/font_size = 200
+Label/fonts/font = ExtResource("4_ldc2o")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(609.872, 222)
+scale = Vector2(1.88862, 1.88862)
+texture = ExtResource("1_bjapb")
+
+[node name="random" type="Button" parent="."]
+offset_left = 735.0
+offset_top = 443.0
+offset_right = 999.0
+offset_bottom = 533.0
+scale = Vector2(1.8, 1.8)
+theme = ExtResource("2_kkqjs")
+text = "Play Random Word"
+script = ExtResource("1_5a7t1")
+
+[node name="choose" type="Button" parent="."]
+offset_left = 735.0
+offset_top = 633.0
+offset_right = 995.0
+offset_bottom = 723.0
+scale = Vector2(1.8, 1.8)
+theme = ExtResource("2_kkqjs")
+text = "Choose a Word"
+script = ExtResource("2_8qpbo")
+
+[node name="daily" type="Button" parent="."]
+offset_left = 735.0
+offset_top = 823.0
+offset_right = 995.0
+offset_bottom = 913.0
+scale = Vector2(1.8, 1.8)
+theme = ExtResource("2_kkqjs")
+text = "Daily Challenge"
+script = ExtResource("5_dqtah")
+
+[node name="godot" type="Label" parent="."]
+offset_left = 756.872
+offset_top = 69.0
+offset_right = 1349.87
+offset_bottom = 342.0
+theme = SubResource("Theme_0kmsp")
+text = "Godot"
+
+[node name="wordle" type="Label" parent="."]
+offset_left = 844.872
+offset_top = 170.0
+offset_right = 1444.87
+offset_bottom = 443.0
+theme = SubResource("Theme_ji2qj")
+text = "Wordle"
+
+[connection signal="pressed" from="random" to="random" method="_on_pressed"]
+[connection signal="pressed" from="choose" to="choose" method="_on_pressed"]
+[connection signal="pressed" from="daily" to="daily" method="_on_pressed"]
